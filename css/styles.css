@@ -66,7 +66,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--brand-color);
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 .logo-color1 {
   color: var(--brand-color);
@@ -87,6 +87,7 @@ img {
   display: flex;
   /* padding-top: 0 auto; */
   align-items: center;
+  margin-left: 93px;
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
@@ -120,7 +121,8 @@ img {
   align-items: center;
   width: 161px;
   height: 16px;
-  /* margin-right: 50px; */
+  fill: var(--grey-color);
+  color: var(--grey-color);
 }
 
 .contact-item:hover,
@@ -243,49 +245,15 @@ img {
   letter-spacing: 0.03em;
   color: var(--grey-color);
 }
-.antenna {
+
+.list-icon {
   width: 270px;
   height: 120px;
-  content: "";
-  background-color: var(--button-background-portfolio);
-  background-image: url(../images/svg/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
+  background: var(--button-background-portfolio);
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-radius: 4px;
-}
-.clock {
-  width: 270px;
-  height: 120px;
-  content: "";
-  background-color: var(--button-background-portfolio);
-  background-image: url(../images/svg/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   margin-bottom: 30px;
-  border-radius: 4px;
-}
-.diagram {
-  width: 270px;
-  height: 120px;
-  content: "";
-  background-color: var(--button-background-portfolio);
-  background-image: url(../images/svg/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-.astronaut {
-  width: 270px;
-  height: 120px;
-  content: "";
-  background-color: var(--button-background-portfolio);
-  background-image: url(../images/svg/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-  border-radius: 4px;
 }
 
 /*what we do*/
@@ -355,8 +323,7 @@ img {
 .socnetwork-list {
   display: flex;
   align-items: center;
-  margin-top: 16px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -478,6 +445,12 @@ img {
 .gallery-item:nth-child(9) {
   margin-bottom: 0px;
 }
+
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .gallery-description {
   padding: 20px 24px;
 }
@@ -513,6 +486,9 @@ img {
 .filters-btn:focus {
   color: var(--white-color);
   background-color: var(--brand-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /*Footer*/
